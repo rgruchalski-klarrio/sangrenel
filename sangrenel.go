@@ -98,6 +98,9 @@ var (
 )
 
 func init() {
+
+	sarama.Logger = log.New(os.Stdout, "[sarama] ", log.LstdFlags)
+
 	flag.StringVar(&Config.topic, "topic", "sangrenel", "Kafka topic to produce to")
 	flag.IntVar(&Config.msgSize, "message-size", 300, "Message size (bytes)")
 	flag.Uint64Var(&Config.msgRate, "produce-rate", 100000000, "Global write rate limit (messages/sec)")

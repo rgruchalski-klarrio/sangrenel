@@ -1,7 +1,7 @@
 module github.com/jamiealquiza/sangrenel
 
 require (
-	github.com/Shopify/sarama v1.31.0
+	github.com/Shopify/sarama v1.34.0
 	github.com/Shopify/toxiproxy v2.1.4+incompatible // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/jamiealquiza/tachymeter v2.0.0+incompatible
